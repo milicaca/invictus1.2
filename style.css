@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;900&display=swap');
+:root {
+    --primary: #262827;
+    --secondary: #ea4c24;
+    --white: #fff;
+    --lightGray: rgb(211, 211, 211);
+    --transition: .4s ease;
+    --font: 'Work Sans', sans-serif;
+    --fontSize: 17px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font);
+    font-size: var(--fontSize);
+}
+
+
+/*******
+header 
+*******/
+
+.mainHeader {
+    background-image: url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 89%, 48% 67%, 0 88%);
+    height: 80vh;
+}
+
+.mainHeader .navbar {
+    background-color: var(--primary);
+}
+
+.mainHeader .navbar .navbar-brand {
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.navbar .navbar-nav .nav-link {
+    background-color: var(--secondary);
+    padding: 10px 30px;
+    color: var(--white);
+    transition: var(--transition);
+}
+
+.dropdown-menu {
+    padding: 10px;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: var(--secondary);
+    color: var(--white);
+    transition: var(--transition);
+}
+
+
+/*******
+uvod
+**********/
+
+.row p {
+    line-height: 32px;
+}
+
+.uvod h1 {
+    color: var(--secondary);
+    font-weight: 800;
+}
+
+.uvod p {
+    font-weight: 400;
+    color: var(--primary);
+}
+
+img {
+    width: 700px;
+}
+
+
+/*********
+program
+*********/
+
+.program {
+    background-size: contain;
+    background-position: center;
+    background: linear-gradient(to right, rgb(37, 37, 37, 0.5), rgba(54, 54, 54, 0.8)), url(img/programi.jpg);
+}
+
+.program h1,
+p {
+    color: var(--white);
+}
+
+.program img {
+    height: 232px;
+    border-radius: 15px 15px 0 0;
+}
+
+.card {
+    border: 3.5px solid var(--secondary);
+    border-radius: 20px;
+}
+
+.card p {
+    color: var(--primary);
+}
+
+.card:hover {
+    transition: var(--transition);
+    background-color: var(--secondary);
+    color: var(--white);
+}
+
+.card-footer:last-child {
+    background: var(--lightGray);
+    border-radius: 0 0 15px 15px;
+}
+
+.card-footer a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--primary)!important;
+}
+
+.card-footer a:hover {
+    color: var(--secondary)!important;
+    font-size: 18px;
+    transition: var(--transition);
+}
+
+
+/******
+prijava
+*******/
+
+.prijava {
+    height: 45vh;
+}
+
+.prijava .alert {
+    background: var(--secondary);
+    color: var(--white);
+}
+
+.prijava h1 {
+    margin-top: 120px;
+    font-size: 3rem;
+}
+
+.prijava a:hover {
+    transition: var(--transition);
+    color: var(--secondary);
+}
+
+
+/*****
+footer
+*****/
+
+footer {
+    background: var(--secondary);
+}
+
+footer .row i {
+    color: var(--primary);
+    font-size: 2rem;
+    padding: 0 18px 0 0;
+}
+
+footer .row i:hover {
+    color: var(--lightGray);
+}
+
+footer .row .lead {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+footer .row ul {
+    list-style: none;
+}
+
+footer .row ul a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+footer .row ul a:hover {
+    color: var(--lightGray);
+}
+
+footer .row ul li {
+    font-size: 1rem;
+    margin-left: -41px;
+}

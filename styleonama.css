@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;900&display=swap');
+:root {
+    --primary: #262827;
+    --secondary: #ea4c24;
+    --white: #fff;
+    --lightGray: rgb(211, 211, 211);
+    --transition: .4s ease;
+    --font: 'Work Sans', sans-serif;
+    --fontSize: 17px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font);
+    font-size: var(--fontSize);
+}
+
+
+/*******
+header 
+*******/
+
+.mainHeader .navbar {
+    background-color: var(--primary);
+}
+
+.mainHeader .navbar .navbar-brand {
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.navbar .navbar-nav .nav-link {
+    background-color: var(--secondary);
+    padding: 10px 30px;
+    color: var(--white);
+    transition: var(--transition);
+}
+
+.dropdown-menu {
+    padding: 10px;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: var(--secondary);
+    color: var(--white);
+    transition: var(--transition);
+}
+
+
+/******
+o nama
+*******/
+
+.onama img {
+    width: 300px;
+}
+
+
+/*******
+program
+*******/
+
+.program hr {
+    border: 2px solid var(--secondary);
+}
+
+
+/*****
+oporavak
+******/
+
+.oporavak {
+    background-size: contain;
+    background-position: center;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgba(212, 212, 212, 0.788)), url(img/oporavak.jpg);
+}
+
+
+/******
+kontakt
+*******/
+
+.form {
+    margin: 50px auto;
+    position: relative;
+    left: 55%;
+}
+
+
+/*****
+online
+******/
+
+.online {
+    height: 70vh;
+}
+
+
+/*****
+footer
+*****/
+
+footer {
+    background: var(--secondary);
+}
+
+footer .row i {
+    color: var(--primary);
+    font-size: 2rem;
+    padding: 0 18px 0 0;
+}
+
+footer .row i:hover {
+    color: var(--lightGray);
+}
+
+footer .row .lead {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+footer .row ul {
+    list-style: none;
+}
+
+footer .row ul a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+footer .row ul a:hover {
+    color: var(--lightGray);
+}
+
+footer .row ul li {
+    font-size: 1rem;
+    margin-left: -41px;
+}
